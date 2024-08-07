@@ -27,6 +27,7 @@ exec --no-startup-id nm-applet
 bindsym $mod+d exec --no-startup-id rofi -show drun
 # bindsym $mod+space exec --no-startup-id rofi -show combi
 bindsym $mod+Tab exec --no-startup-id rofi -show window
+bindsym $mod+n exec flameshot gui
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
