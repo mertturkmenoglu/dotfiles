@@ -141,3 +141,5 @@ export PATH=$PATH:/home/mert/.local/bin
 export PATH=$PATH:/home/mert/dev
 
 alias gnomecontrol='XDG_CURRENT_DESKTOP=Gnome; gnome-control-center'
+
+eval "$(zoxide init bash)"

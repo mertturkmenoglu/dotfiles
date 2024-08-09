@@ -18,6 +18,7 @@ exec --no-startup-id dex --autostart --environment i3
 exec_always killall polybar
 exec_always --no-startup-id /home/mert/.config/polybar/launch_polybar.sh
 exec --no-startup-id picom
+exec_always --no-startup-id xset s 2400
 exec_always --no-startup-id feh --no-fehbg --bg-scale '/home/mert/Pictures/wallpaper.jpg'
 
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
