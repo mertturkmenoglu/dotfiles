@@ -97,6 +97,7 @@ alias l='ls -CF'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 alias cdf='cd "$(find ~ -type d | fzf)"'
 alias cdff='cd "$(find . -type d | fzf)"'
+alias monitorrefresh="xrandr --output DP-0 --mode 2560x1440 --rate 143.97"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -145,3 +146,11 @@ export PATH=$PATH:/home/mert/dev
 alias gnomecontrol='XDG_CURRENT_DESKTOP=Gnome; gnome-control-center'
 
 eval "$(zoxide init bash)"
+
+# pnpm
+export PNPM_HOME="/home/mert/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
